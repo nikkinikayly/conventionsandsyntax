@@ -1,15 +1,16 @@
 # conventionsandsyntax
 Conventions and Syntax assignment
 
-  	if (totalMarks >= 80) {
-  	    MessageBox.Show("Got Higher First Class ");
-  	}
-  	else if (totalMarks >= 60) {
-  	    MessageBox.Show("Got First Class ");
-  	}
-  	else if (totalMarks >= 40){
-  	    MessageBox.Show("Just pass only");
- 	}
-  	else {
-  	    MessageBox.Show("Failed");
-  	}
+public class ForLoop : MonoBehaviour
+{
+    int numEnemies = 3;
+    
+    
+    void Start ()
+    {
+        for(int i = 0; i < numEnemies; i++)
+        {
+            Debug.Log("Creating enemy number: " + i);
+        }
+    }
+}
